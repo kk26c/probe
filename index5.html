@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Status Details</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      background-image:  url(FINAL-12.avif);
+      height: 120%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: rgb(233, 223, 38);
+    }
+
+    .status-table {
+      margin-top: 50px;
+      
+    }
+
+    .table th,
+    .table td {
+      vertical-align: middle;
+    }
+
+    .table th {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .table td {
+      background-color: #e9ecef;
+    }
+
+    /* Adding borders to table */
+    .table-bordered th,
+    .table-bordered td {
+      border: 1px solid #dee2e6;
+      height: 100px ;
+      width: 150px;
+    }
+
+    /* Optional hover effect on table rows */
+    .table tbody tr:hover {
+      background-color: #dfefff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><b>Train Status Details</b></h1>
+    <div class="row justify-content-center status-table">
+      <div class="col-md-6">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Details</th>
+              <th>Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Train Number</td>
+                <td id="totalWagons">TR67436</td> <!-- Replace with actual value -->
+              </tr>
+            <tr>
+              <td>Number of Wagons in the Train</td>
+              <td id="totalWagons">200</td> <!-- Replace with actual value -->
+            </tr>
+            <tr>
+              <td>Number of Fully Loaded Wagons</td>
+              <td id="filledWagons">120</td> <!-- Replace with actual value -->
+            </tr>
+            <tr>
+              <td>Number of Unloaded Wagons</td>
+              <td id="unfilledWagons">76</td> <!-- Replace with actual value -->
+            </tr>
+            <tr>
+              <td>Number of Wagons Being Loaded</td>
+              <td id="loadingWagons">4</td> <!-- Replace with actual value -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap and jQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
